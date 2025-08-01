@@ -1,0 +1,29 @@
+{
+  "name": "password-generator-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "password": "./dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "link": "pnpm link",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "@types/node": "24.1.0",
+    "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "clipboardy": "^4.0.0",
+    "commander": "14.0.0",
+    "prettier": "^3.6.2"
+  }
+}
